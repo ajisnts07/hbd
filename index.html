@@ -12,38 +12,108 @@
     <link rel="icon" href="./assets/img/secondary-logo.png" alt="favicon" />
     <!-- Bootstrap Stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <!-- Col-sm-4 -->
     <div class="col-sm-4 mx-auto">
-      <div class="welcome d-flex justify-content-center align-items-center">
-        <div class="text-center">
-          <img src="./assets/img/primary-logo.png" alt="primary-logo" />
-          <h2>The Birthday Of</h2>
-          <h1 class="my-2">TIARA</h1>
-          <div class="caption">02 . 11 . 2023</div>
+      <!-- Container -->
+      <div class="container px-4">
+        <!-- Welcome -->
+        <div class="welcome d-flex justify-content-center align-items-center">
+          <div class="text-center">
+            <img src="./assets/img/primary-logo.png" alt="primary-logo" />
+            <h2>The Birthday Of</h2>
+            <h1 class="my-2">TIARA</h1>
+            <div class="caption">02 . 11 . 2023</div>
+          </div>
+        </div>
+        <!-- History -->
+        <div class="history mb-5">
+          <div class="slick">
+            <div class="slide d-flex justify-content-center align-items-center">
+              <div class="container px-3">
+                <h1>02</h1>
+                <h1>Nov</h1>
+                <h1>2008</h1>
+              </div>
+            </div>
+            <div class="slide d-flex justify-content-center align-items-center">
+              <div class="container px-3">
+                <h1>Since</h1>
+                <h1>5,478</h1>
+                <h1>Day</h1>
+              </div>
+            </div>
+            <div class="slide d-flex justify-content-center align-items-center">
+              <div class="container px-3">
+                <h1>15</h1>
+                <h1>Years Old</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Cake -->
+        <div class="cake" data-aos="fade-up">
+          <div class="plate"></div>
+          <div class="layer layer-bottom"></div>
+          <div class="layer layer-middle"></div>
+          <div class="layer layer-top"></div>
+          <div class="icing"></div>
+          <div class="drip drip1"></div>
+          <div class="drip drip2"></div>
+          <div class="drip drip3"></div>
+          <div class="candle">
+            <div class="flame"></div>
+          </div>
+        </div>
+        <!-- Wish -->
+        <div class="wish mt-3 mb-5">
+          <p class="mb-3">
+            Hallo cantik, <br />tepat hari ini Kamis 02 November 2023 adalah tanggal kelahiran km. Lewat ini aku mau ngucapin, selamat ulang tahun le 15 ya ayangggg tiaraa. Harus selalu bersyukur masih dikasih umur panjang kesehatan sampai
+            detik ini, coba km liat diatas udah 5,478 hari yang udah km lewati di bumi ini. km hebat kuat udah bisa jalani hari hari itu, walaupun dengan segala rintangan nya kedepannya harus lebih kuat lagi ya happy terus. Aku gasuka
+            dengar kata kata yang buruk lagi.
+          </p>
+          <p class="mb-3">
+            Sekarang wish dari aku yaa, <br />
+            doa paling utama semoga km diberi kesehatan selalu, kelancaran, keselamatan, panjang umur. km harus happy selalu ya gapapa kalo banyak masalah menghampiri kedepannya, itu bakal ngebikin kita kuat.
+          </p>
+          <p>
+            Aku salut sama km, <br />udah rajin, pinter, cantik, baik, semuanya km borong. kalo lagi cape boleh kok istirahat, kalo mau nangis boleh kok nangis. Jaga kesehatan selalu yaa, makan nya lebih diseringin lagi. Jangan lupa jaga
+            hati juga buat aku, semogaa kita langgeng terus. doa yang selalu aku selipin sekarang. wish u all the best deh sayangg hehee.... udah takut kepanjangan ;()
+          </p>
         </div>
       </div>
+      <!-- Fireworks -->
+      <div class="fireworks">
+        <canvas id="canvas">Canvas is not supported in your browser - sorry.</canvas>
+      </div>
+      <!-- Footer -->
+      <footer class="footer text-center py-2" style="background-color: #000">
+        <div class="caption text-white">Made with <iconify-icon icon="mdi:heart" style="color: red" width="12" flip="horizontal"></iconify-icon> by Aji (Boyfriend)</div>
+      </footer>
     </div>
 
-    <!-- <audio id="mp3">
+    <audio id="mp3" hidden loop>
       <source src="./assets/audio/audio.mp3" type="audio/mpeg" />
-    </audio> -->
+    </audio>
 
-    <!-- <button class="bg-dark" onclick="play()" id="play"></button> -->
+    <button onclick="play()" id="play"></button>
 
     <!-- Popper Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <!-- Bootstrap Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <!-- Jquery -->
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <!-- Iconify -->
     <script type="text/javascript" src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <!-- Slick Javascript -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- Style Javascript -->
     <script type="text/javascript" src="./assets/js/style.js"></script>
-    <!-- Audio Javascript -->
   </body>
 </html>
