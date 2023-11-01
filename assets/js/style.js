@@ -3,6 +3,7 @@ let audio = document.getElementById('mp3');
 let button = document.getElementById('play');
 audio.loop = true;
 audio.hidden = true;
+audio.play();
 
 function play() {
   if (audio.paused) {
