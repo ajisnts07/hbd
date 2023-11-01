@@ -1,0 +1,86 @@
+// Variable Declarations
+$primary-color: #f2bed1;
+$secondary-color: #f8e8ee;
+$text-primary: #222222;
+$text-secondary: #777777;
+$bg-primary: #ffffff;
+$bg-secondary: #d9d9d9;
+
+// Mixin
+@mixin typography($font-family, $font-size, $line-height, $font-weight, $color) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  color: $color;
+  margin-bottom: 0;
+}
+
+// Font Face
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../font/Montserrat-Regular.ttf');
+}
+
+// Typography
+h1 {
+  @include typography('Montserrat', 70px, 77px, 800, $text-primary);
+} // Heading 1
+h2 {
+  @include typography('Montserrat', 16px, 17.6px, 700, $text-primary);
+} // Heading 2
+h3 {
+  @include typography('Montserrat', 14px, 26.25px, 600, $text-primary);
+  font-family: sans-serif;
+} // Heading 3
+p {
+  @include typography('Montserrat', 22px, 33px, 400, $text-primary);
+} // Paragraph
+a {
+  @include typography('Montserrat', 16px, 20px, 500, $text-primary);
+  text-decoration: none;
+} // A-href
+.caption {
+  @include typography('Montserrat', 12px, 21px, 500, $text-secondary);
+  font-family: sans-serif;
+} // Caption
+
+// Body Reset
+body {
+  margin: 0;
+  padding: 0;
+  input,
+  button,
+  text-area {
+    &:hover,
+    &:active,
+    &:focus {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+  button {
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  #play {
+    background-image: url('../img/pause.png');
+  }
+}
+
+// Col-sm-4
+.col-sm-4 {
+  min-height: 100vh;
+  // Welcome
+  .welcome {
+    min-height: 100vh;
+    img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50px 100px 25px 50px;
+      margin-bottom: 20vh;
+    }
+  }
+}
